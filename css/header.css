@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header principal */
+header {
+    background-color: #003CAE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Container do cabeçalho */
+.cabecalho {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    max-height: 50px;
+    height: auto;
+}
+
+/* Menu de navegação */
+.menu {
+    margin-left: auto;
+}
+
+.menu nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #FBFBF9;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+    width: 125px;
+    height: 45px;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu nav a:hover {
+    background-color: #002B7E;
+    border-radius: 30px;
+    transition: color 0.3s;
+    /* border-bottom: 2px solid #3498db; */
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu nav a {
+        padding: 10px 0;
+    }
+}
+
+/* ELEMENTOS DA PÁGINA FALE CONOSCO */
+.button{
+    text-align: center;
+}

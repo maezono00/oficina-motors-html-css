@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFICINA Master</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    
+    <h1>Serviços Disponíveis</h1>
+    <div class="container">
+        <section class="servicos">
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_1.png"/>
+                    <h3>Troca de Óleo e Filtros</h3>
+                    <h2>R$120,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_2.png"/>
+                    <h3>Alinhamento e Balanceamento</h3>
+                    <h2>R$165,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_3.png"/>
+                    <h3>Sistema de Freios</h3>
+                    <h2>R$300,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_4.png"/>
+                    <h3>Suspensão</h3>
+                    <h2>R$125,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_5.png"/>
+                    <h3>Diagnóstico Eletrônico</h3>
+                    <h2>R$80,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_6.png"/>
+                    <h3>Ar-Condicionado</h3>
+                    <h2>R$175,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_7.png"/>
+                    <h3>Elétrica Básica</h3>
+                    <h2>R$195,00</h2>
+                </section>
+            </section>
+            <section class="servico-item">
+                <section>
+                    <img src="img/servico_8.png"/>
+                    <h3>Higienização</h3>
+                    <h2>R$225,00</h2>
+                </section>
+            </section>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFICINA Master</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <h1>Galeria da Empresa</h1>
+    <div class="container">
+        <div class="galeria">
+            <figure class="galeria-fotos">
+                <img src="img/foto_1.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_2.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_3.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_4.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_5.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_6.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_7.png">
+            </figure>
+            <figure class="galeria-fotos">
+                <img src="img/foto_8.png">
+            </figure>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFICINA Master</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <h1>OFICINA Master</h1>
+    <div class="container">
+        <div class="conteudo-divido">
+            <div class="index-img">
+                <p>
+                    Bem-vindo à OFICINA Master, sua parceira de confiança em manutenção e reparação de veículos! Nossa oficina foi criada para oferecer serviços mecânicos de altíssima qualidade, combinados com preços acessíveis e um atendimento transparente. Sabemos o quanto seu carro é essencial no dia a dia, e nossa missão é mantê-lo em perfeito funcionamento, com agilidade e profissionalismo.
+                </p>
+            </div>
+            <div class="index-sobre">
+
+                <h2>Missão</h2>
+                <br>
+                <p>
+                    Garantir a satisfação dos nossos clientes através de serviços automotivos eficientes, duráveis e honestos, proporcionando segurança e tranquilidade no trânsito sem pesar no bolso.
+                </p>
+                <h2>Visão</h2>
+                <br>
+                <p>
+                    Ser reconhecida como a melhor oficina da região, destacando-nos pelo compromisso com a excelência, relacionamento próximo com o cliente e tecnologia aplicada à mecânica.
+                </p>
+                <h2>Valores</h2>
+                <br>
+                <p>
+                    ✅ Transparência - Sem surpresas! Explicamos cada serviço e damos orçamentos claros.<br>
+                    ✅ Qualidade - Usamos peças de procedência e mão de obra especializada. <br>
+                    ✅ Respeito ao cliente - Atendimento personalizado e prazos cumpridos. <br>
+                    ✅ Preço justo - Serviços acessíveis, sem abrir mão da durabilidade.
+                </p>
+            </div>
+        </div>
+        <script src="../js/script-gpt.js"></script>   
+</body>
+</html>
